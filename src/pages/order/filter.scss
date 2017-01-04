@@ -1,0 +1,16 @@
+page-order-filter{
+    .item-button{
+        button{
+             height: 40px !important;
+        }
+
+        .item-button-left{
+            width: calc(50% - 30px);
+            margin-right: 0;
+        }
+
+        .item-button-right{
+            width: 90%;
+        }
+    }
+}

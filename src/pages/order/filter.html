@@ -1,0 +1,91 @@
+<ion-list inset radio-group [(ngModel)]="orderBy">
+    <ion-item-divider>
+      订单属性
+    </ion-item-divider>
+
+    <ion-item>
+        <ion-label>客户名称:</ion-label>
+        <ion-input type="text" placeholder="检索名称文字" [(ngModel)]="nameText"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>业务编号:</ion-label>
+        <ion-input type="text" placeholder="检索业务编号文字" [(ngModel)]="codeText"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>订单时间(开始)：</ion-label>
+        <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="orderStartTime"></ion-datetime>
+    </ion-item>
+    <ion-item>
+        <ion-label>订单时间(结束)：</ion-label>
+        <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="orderEndTime"></ion-datetime>
+    </ion-item>
+
+    <ion-item-divider>
+      订单状态
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-toggle [(ngModel)]="whereType1" (ionChange)="whereTypeChange(1)">></ion-toggle>
+      <ion-label>
+        操作中
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle [(ngModel)]="whereType2" (ionChange)="whereTypeChange(2)">></ion-toggle>
+      <ion-label>
+        操作完成
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle [(ngModel)]="whereType3" (ionChange)="whereTypeChange(3)">></ion-toggle>
+      <ion-label>
+        待结算
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle [(ngModel)]="whereType4" (ionChange)="whereTypeChange(4)">></ion-toggle>
+      <ion-label>
+        结算完成
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      排序类型
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-radio value="orderCodeAes"></ion-radio>
+      <ion-label>
+        业务编号从小到大
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio value="orderCodeDesc"></ion-radio>
+      <ion-label>
+        业务编号从大到小
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio value="orderTimeAes"></ion-radio>
+      <ion-label>
+        订单操作时间最长
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio value="orderTimeDesc"></ion-radio>
+      <ion-label>
+        订单操作时间最短
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="item-button">
+        <button ion-button item-left color="light" class="item-button-left">重置</button>
+        <button ion-button item-right class="item-button-right">搜索</button>
+    </ion-item>
+</ion-list>

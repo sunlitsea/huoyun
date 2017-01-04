@@ -1,0 +1,16 @@
+page-order {
+    ion-navbar{
+        .toolbar-background{
+            border-bottom-width: 0.55px !important;
+        }
+    }
+
+    ion-toolbar{
+        margin: 8px 0;
+
+        .toolbar-background{
+            background-color: white !important;
+            border-style: none !important;
+        }
+    }
+}

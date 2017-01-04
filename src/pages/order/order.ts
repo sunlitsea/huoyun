@@ -22,19 +22,13 @@ export class OrderPage {
     }
 
     doRefresh(refresher) {
-        console.log('Begin async operation', refresher);
-
         setTimeout(() => {
-            console.log('Async operation has ended');
             refresher.complete();
         }, 2000);
     }
 
     doInfinite(infiniteScroll) {
-        console.log('Begin async operation');
-
         setTimeout(() => {
-            console.log('Async operation has ended');
             infiniteScroll.complete();
         }, 2000);
     }

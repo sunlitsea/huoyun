@@ -34,7 +34,7 @@
 
     <ion-list>
         <ion-item>
-            <div class="item-container">
+            <div class="item-container" (tap)="goDetail(123)">
                 <div class="item-title">SE1612001</div>
                 <div class="item-code">主提单号：*******</div>
                 <div class="item-customer">客户名称： ***有限公司</div>
@@ -104,7 +104,6 @@
             </div>
         </ion-item>
     </ion-list>
-
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
         <ion-infinite-scroll-content
             loadingSpinner="bubbles"

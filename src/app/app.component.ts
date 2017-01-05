@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ViewChild } from '@angular/core';
-import { Platform, Slides, NavController  } from 'ionic-angular';
+import { Platform, NavController  } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { SlidesPage } from '../pages/slides/slides';

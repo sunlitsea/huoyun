@@ -7,8 +7,11 @@ import { AppStorageService } from './../services/app.storage.service';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { OrderPage } from '../pages/order/order';
+
+import { OrderRootPage } from '../pages/order/root';
+import { OrderListPage } from '../pages/order/list';
 import { OrderFilterPage } from '../pages/order/filter';
+import { OrderDetailPage } from '../pages/order/detail';
 
 import { ContactPage } from '../pages/contact/contact';
 import { AboutPage } from '../pages/about/about';
@@ -18,13 +21,20 @@ import { SlidesPage } from '../pages/slides/slides';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    OrderFilterPage,
-    HomePage,
-    TabsPage,
+
     SlidesPage,
-    OrderPage
+    TabsPage,
+
+    HomePage,
+
+    OrderRootPage,
+    OrderListPage,
+    OrderFilterPage,
+    OrderDetailPage,
+
+    ContactPage,
+
+    AboutPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -32,14 +42,20 @@ import { SlidesPage } from '../pages/slides/slides';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    OrderPage,
-    OrderFilterPage,
-    ContactPage,
-    AboutPage,
+
+    SlidesPage,
     TabsPage,
-    SlidesPage
-    
+
+    HomePage,
+
+    OrderRootPage,
+    OrderListPage,
+    OrderFilterPage,
+    OrderDetailPage,
+
+    ContactPage,
+
+    AboutPage,
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}, 

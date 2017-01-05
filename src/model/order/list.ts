@@ -1,4 +1,4 @@
-export class OrderList{
+export class OrderListModel{
     code:string;
     
 }

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { App, NavController, PopoverController } from 'ionic-angular';
 
 import { OrderFilterPage } from './filter';
